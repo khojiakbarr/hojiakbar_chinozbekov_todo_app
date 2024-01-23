@@ -15,7 +15,7 @@ loginForm.addEventListener("submit", async (event) => {
     }),
   });
   const res = await date.json();
-  console.log(res);
+  alert(res.message);
 
   localStorage.setItem("token", res.token);
   const token = res.token;
